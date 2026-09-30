@@ -40,7 +40,7 @@ public class BuildingService {
                 page.getContent().stream().map(this::mapToDTO).toList(),
                 page.getNumber(),
                 page.getSize(),
-                page.getTotalPages(),
+                (int) page.getTotalElements(),
                 page.getTotalPages(),
                 page.isLast()
         );

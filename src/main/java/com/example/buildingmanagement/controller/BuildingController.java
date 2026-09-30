@@ -32,7 +32,6 @@ public class BuildingController {
             @RequestParam(required = false, defaultValue = "asc") String sortDir
     ) {
         if (buildingName == null) buildingName = "";
-        if (status == null) status = 1;
         if (page < 0) page = 0;
         if (size <= 0) size = 5;
         Sort.Direction direction = sortDir.equalsIgnoreCase("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
